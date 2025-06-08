@@ -1,0 +1,215 @@
+<style>
+body:before {
+content: " ";
+height: 100vh;
+width: 100vw;
+display: block;
+position: fixed; 
+top: 0; 
+left: 0; 
+z-index: 100;
+background-image: url('https://cdn.lowgif.com/medium/35533ca912e13f85-.gif');
+background-size: cover;
+background-repeat: no-repeat;
+background-position:center;
+animation: yourAnimation 1s ease 0s 1 normal forwards;
+pointer-events: none;}
+@keyframes yourAnimation { 0.0%{ opacity: 1;} 75%{ opacity: 1; } 100%{ opacity: 0;} } 
+</style>
+
+<style>@import url('https://fonts.googleapis.com/css2?family=Imbue:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root {
+		--pageTexture: url(https://media.giphy.com/media/3o6vXRxrhj7Ov94Gbu/source.gif);
+--yourBackground: url(https://64.media.tumblr.com/578ed7dbe9e1ab2f938d1cdb789a9de2/9aad0ce247ef6597-d9/s500x750/a03e154c2760904535590144a7a421ac056cf636.gifv);
+	--nameSticker: url(https://media.giphy.com/media/LSQfNcCH0uyiE5WY5v/source.gif);
+	--blurbSticker: url(https://media.giphy.com/media/IzcacYwTkEpp8LMXig/source.gif);
+	--commentsSticker: url(https://media.giphy.com/media/xT9IgIfPZruMR8YSty/source.gif);
+	--interestSticker: url(https://media.giphy.com/media/9S1IwZASPfxIdLlnpx/source.gif);
+	--urlInfoBox: url(https://media.giphy.com/media/9B7XwCQZRQfQs/source.gif);
+	--titleTexture: url(https://media.giphy.com/media/KEATEV6uaagupaQEXW/source.gif);
+	--linkTexture: url(https://media.giphy.com/media/qGWVA1zoivT7a/source.gif);
+	--profileInfo: url(https://media.giphy.com/media/k81NasbqkKA5HSyJxN/source.gif);
+}
+.profile {
+	font-family: 'Space Mono', monospace;
+}
+.profile .left h1 {
+	font-family: 'Imbue', serif;
+}
+.profile .contact .heading h4, .profile .table-section .heading h4, .profile .blurbs .heading h4, .profile .friends .heading h4, .blog-entry .comments .heading h4, .bulletin .comments .heading h4, .home-actions .heading h1, .statistics .heading h4 {
+	font-family: 'Imbue', serif;
+}
+body {
+	background-image: var(--yourBackground);
+	background-size: cover;
+	background-attachment: fixed;
+}
+main {
+	background-color: #F1B9E377;
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+body:before {
+	display: block;
+	position: fixed;
+	pointer-events: none;
+	content: " ";
+	height: 100vh;
+	width: 100vw;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-image: var(--pageTexture);
+	background-size: cover;
+	background-attachment: fixed;
+	opacity: .1;
+	z-index: 25;
+}
+.profile a {
+	transition: all .1s!important;
+}
+.profile a:hover, .profile a:hover p {
+	background: var(--linkTexture)!important;
+	;
+	color: #FFF!important;
+	text-shadow: 1px 1px 0 #000!important;
+	;
+}
+.profile .left h1 {
+	text-transform: uppercase;
+	font-size: 3rem;
+	color: #FFF;
+	text-shadow: 3px 3px 0 #67337C;
+}
+.profile .left h1:before {
+	background-image: var(--nameSticker);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: block;
+	height: 100px;
+	width: 100px;
+	content: " ";
+	transform: rotate(-4deg) scale(1.7);
+	position: absolute;
+	z-index: -1;
+}
+.profile .right .blurbs {
+	position: relative;
+}
+.profile .right .blurbs:after {
+	background-image: var(--blurbSticker);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: block;
+	height: 100px;
+	width: 100px;
+	content: " ";
+	transform: rotate(-4deg) scale(2) translateY(-2rem);
+	position: absolute;
+	right: 0;
+	z-index: -1;
+}
+.profile .left .table-section:nth-last-child(2):before {
+	background-image: var(--interestSticker);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: block;
+	height: 100px;
+	width: 100px;
+	content: " ";
+	transform: rotate(-4deg) scale(1.7) translateX(-3em) translateY(2.5em);
+	position: absolute;
+	z-index: -1;
+}
+.profile .contact, .profile .url-info, .profile .table-section, .home-actions {
+	border: 0!important;
+	width: 100%;
+}
+.profile .contact .heading, .profile .table-section .heading, .home-actions .heading, .profile .blurbs .heading, .profile .friends .heading {
+	background-image: var(--titleTexture)!important;
+	background-size: cover;
+	background-position: center;
+	color: #FFF;
+}
+.profile .contact .heading h4, .profile .table-section .heading h4, .profile .blurbs .heading h4, .profile .friends .heading h4, .blog-entry .comments .heading h4, .bulletin .comments .heading h4, .home-actions .heading h1, .statistics .heading h4 {
+	text-transform: uppercase;
+	font-size: 1.8rem;
+}
+.profile .url-info {
+	border: 0;
+	color: #FFF;
+	background: var(--urlInfoBox);
+	background-position: center;
+	text-align: center;
+}
+.details-table td:first-child {
+	background: none;
+	width: fit-content!important;
+	color: #FFF;
+	text-shadow: 0px 2px 0 #000;
+}
+.details-table td:last-child {
+	background: none;
+	max-height: 150px;
+	overflow-y: scroll;
+	float: right;
+}
+.details-table tr {
+	border-bottom: 1px solid #000;
+}
+.profile .blurbs .section h4 {
+	color: #4D1469;
+	font-size: 1rem;
+}
+.profile-info {
+	background: var(--profileInfo);
+	background-size: cover;
+	background-position: center;
+	box-shadow: -7px 8px 0 #0006;
+	color: #FFF;
+}
+.profile-info h3 a {
+	color: #FFF;
+}
+.comments-table, .details-table {
+	border: 1px solid #0000;
+	border-collapse: separate;
+	border-spacing: 0 .5em;
+}
+.comments-table tr td:last-child {
+	height: 250px;
+	display: block;
+	overflow-y: scroll;
+}
+.comments-table td, .music-table td {
+	background: none;
+	color: #000;
+}
+.comments-table tr {
+	border-bottom: 1px solid #000;
+}
+.comments-table td:first-child, .music-table td:first-child {
+	background: none;
+	text-align: left;
+}
+.profile .comments-table:after {
+	background-image: var(--commentsSticker);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: block;
+	height: 100px;
+	width: 100px;
+	content: " ";
+	transform: rotate(-4deg) scale(2) translateY(-3.5rem);
+	position: absolute;
+	right: 0;
+	z-index: -1;
+}
+</style>
